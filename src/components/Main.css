@@ -33,3 +33,9 @@
   font-size: 1.5rem;
   font-family: "Lato", sans-serif;
 }
+
+@media only screen and (max-width: 900px) {
+  .pokelist {
+    padding: 1rem;
+  }
+}

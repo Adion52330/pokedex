@@ -1,0 +1,65 @@
+.card {
+  padding: 2.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 40%;
+  margin: 1rem;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  gap: 20px;
+  transition: all 0.1s ease-out;
+}
+/* create a cool effect when hovering over card */
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.pokename {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.poketype {
+  padding: 2px;
+  background-color: #ffffff3f;
+  border-radius: 1rem;
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+
+.modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+  width: 100%;
+}
+
+/* turn width of card to 95% when in mobile devices */
+@media only screen and (max-width: 900px) {
+  .card {
+    width: 100%;
+  }
+  .modal {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.hp::-webkit-meter-bar {
+  background: yellow;
+}
+
+.defense::-webkit-meter-bar {
+  background: orange;
+}
+
+.attack::-webkit-meter-bar {
+  background: limegreen;
+}
